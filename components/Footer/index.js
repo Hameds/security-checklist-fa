@@ -1,14 +1,14 @@
 // @flow
-import React from 'react';
-import { Container, Description, Icons } from './style';
-import Icon from '../Icon';
+import React from "react";
+import { Container, Description, Icons } from "./style";
+import Icon from "../Icon";
 
 export default function Footer() {
   return (
     <Container data-cy="footer">
       <Icons>
         <a
-          href="https://github.com/brianlovin/security-checklist"
+          href="https://github.com/hameds/security-checklist-fa"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -17,15 +17,15 @@ export default function Footer() {
       </Icons>
 
       <Description>
-        Copyright whenever. This is
+        این چک لیست یک پروژه&nbsp;
         <a
-          href="https://github.com/brianlovin/security-checklist"
+          href="https://github.com/hameds/security-checklist-fa"
           target="_blank"
           rel="noopener noreferrer"
         >
-          open source
+          اپن‌سورس
         </a>
-        .
+        است.
       </Description>
     </Container>
   );

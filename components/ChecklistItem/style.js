@@ -1,8 +1,8 @@
 // @flow
-import styled, { css } from 'styled-components';
-import Markdown from 'react-markdown';
-import { theme } from '../theme';
-import { Shadows, tint, hexa } from '../globals';
+import styled, { css } from "styled-components";
+import Markdown from "react-markdown";
+import { theme } from "../theme";
+import { Shadows, tint, hexa } from "../globals";
 
 export const Container = styled.div`
   margin-bottom: 24px;
@@ -14,7 +14,7 @@ export const CardContent = styled.div`
   width: 100%;
 
   @media (max-width: 768px) {
-    flex-direction: ${props => (props.isCollapsed ? 'row' : 'column')};
+    flex-direction: ${props => (props.isCollapsed ? "row" : "column")};
   }
 `;
 
@@ -70,11 +70,11 @@ export const CheckboxContainer = styled.div`
     width: 32px;
   }
 
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     position: absolute;
   }
 
-  input[type='checkbox'] + label {
+  input[type="checkbox"] + label {
     width: 32px;
     height: 32px;
     border-radius: 4px;
@@ -86,13 +86,13 @@ export const CheckboxContainer = styled.div`
     text-indent: -1000px;
   }
 
-  input[type='checkbox'] + label:hover {
+  input[type="checkbox"] + label:hover {
     ${Shadows.default};
     background: ${theme.bg.default};
   }
 
-  input[type='checkbox'] + label::after {
-    content: '';
+  input[type="checkbox"] + label::after {
+    content: "";
     position: absolute;
     display: block;
     left: 11px;
@@ -104,19 +104,19 @@ export const CheckboxContainer = styled.div`
     transform: rotate(45deg);
   }
 
-  input[type='checkbox']:checked + label {
+  input[type="checkbox"]:checked + label {
     border: 1px solid ${theme.bg.default};
   }
 
-  input[type='checkbox']:checked + label::after {
+  input[type="checkbox"]:checked + label::after {
     border: solid ${theme.bg.default};
     border-width: 0 2px 2px 0;
   }
 
   /* This ::before pseudo-element is used to animate the gradient
      which does not support transitions. */
-  input[type='checkbox'] + label::before {
-    content: '';
+  input[type="checkbox"] + label::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -128,18 +128,18 @@ export const CheckboxContainer = styled.div`
     box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.4);
   }
 
-  input[type='checkbox']:checked + label::before {
+  input[type="checkbox"]:checked + label::before {
     opacity: 1;
     background-color: ${theme.success.default};
   }
 
-  input[type='checkbox']:active + label,
-  input[type='checkbox']:focus + label {
+  input[type="checkbox"]:active + label,
+  input[type="checkbox"]:focus + label {
     box-shadow: 0 0 0 1px ${theme.bg.default},
       0 0 0 3px ${props => hexa(props.theme.brand.default, 0.5)};
   }
-  input[type='checkbox']:active:checked + label,
-  input[type='checkbox']:focus:checked + label {
+  input[type="checkbox"]:active:checked + label,
+  input[type="checkbox"]:focus:checked + label {
     box-shadow: 0 0 0 1px ${theme.bg.default},
       0 0 0 3px ${props => hexa(props.theme.spectrum.default, 0.5)};
   }
@@ -151,16 +151,18 @@ export const ResourceContent = styled.div`
   margin-top: 2px;
   padding-left: 16px;
   width: 100%;
-  justify-content: ${props => (props.isCollapsed ? 'center' : 'flex-start')};
+  justify-content: ${props => (props.isCollapsed ? "center" : "flex-start")};
 
   @media (max-width: 768px) {
-    padding-left: ${props => (props.isCollapsed ? '16px' : '8px')};
-    margin-top: ${props => (props.isCollapsed ? '0px' : '24px')};
-    justify-content: ${props => (props.isCollapsed ? 'center' : 'flex-start')};
+    padding-left: ${props => (props.isCollapsed ? "16px" : "8px")};
+    margin-top: ${props => (props.isCollapsed ? "0px" : "24px")};
+    justify-content: ${props => (props.isCollapsed ? "center" : "flex-start")};
   }
 `;
 
-export const AppsContainer = styled.div``;
+export const AppsContainer = styled.div`
+  direction: ltr;
+`;
 
 export const AppRowContainer = styled.div`
   display: flex;
@@ -388,7 +390,7 @@ export const Content = styled.div`
   opacity: 1;
   visibility: visible;
 
-  &[aria-hidden='true'] {
+  &[aria-hidden="true"] {
     max-height: 0;
     opacity: 0;
     visibility: hidden;
@@ -408,7 +410,7 @@ export const Uncollapse = styled.button`
   justify-content: center;
   margin-right: 8px;
   margin-left: 16px;
-  flex: 0 1 140px;
+  flex: 0 1 160px;
 
   @media (max-width: 768px) {
     display: none;
@@ -513,7 +515,7 @@ export const ExpandContent = styled.div`
   opacity: 1;
   visibility: visible;
 
-  &[aria-hidden='true'] {
+  &[aria-hidden="true"] {
     max-height: 0;
     opacity: 0;
     visibility: hidden;

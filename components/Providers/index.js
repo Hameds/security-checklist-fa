@@ -1,9 +1,9 @@
-import { ThemeProvider } from 'styled-components';
-import Head from 'next/head';
-import { DefaultSeo } from 'next-seo';
-import { GlobalStyles } from '../../static/normalize';
-import SEO from '../../config/next-seo';
-import { theme } from '../theme';
+import { ThemeProvider } from "styled-components";
+import Head from "next/head";
+import { DefaultSeo } from "next-seo";
+import { GlobalStyles } from "../../static/normalize";
+import SEO from "../../config/next-seo";
+import { theme } from "../theme";
 
 interface Props {
   children?: any;
@@ -13,7 +13,7 @@ export default function Providers({ children }: Props) {
   return (
     <>
       <DefaultSeo {...SEO} />
-      
+
       <Head>
         <meta name="theme-color" content="#FFF" key="theme-color" />
 
@@ -95,13 +95,16 @@ export default function Providers({ children }: Props) {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <link rel="mask-icon" href="/static/pinned-tab.svg" color="#FFF" />
         <meta name="msapplication-TileColor" content="#ffffff" />
+        <link
+          href="https://cdn.rawgit.com/rastikerdar/vazir-font/v21.2.0/dist/font-face.css"
+          rel="stylesheet"
+          type="text/css"
+        />
       </Head>
 
       <GlobalStyles />
-      
-      <ThemeProvider theme={theme}>
-        {children}
-      </ThemeProvider>
+
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </>
   );
 }

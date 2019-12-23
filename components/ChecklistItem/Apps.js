@@ -1,14 +1,19 @@
 // @flow
 // $FlowIssue
-import React, { useState, useRef } from 'react';
-import { AppsContainer, SectionHeading, ExpandContainer, ExpandContent } from './style';
-import { Button } from '../Button';
-import type { ChecklistResource } from '../../types';
-import { AppRow } from './App';
+import React, { useState, useRef } from "react";
+import {
+  AppsContainer,
+  SectionHeading,
+  ExpandContainer,
+  ExpandContent
+} from "./style";
+import { Button } from "../Button";
+import type { ChecklistResource } from "../../types";
+import { AppRow } from "./App";
 
 type Props = {
   resource: ChecklistResource,
-  handleAppsExpand: Function,
+  handleAppsExpand: Function
 };
 
 export const Apps = ({ resource, handleAppsExpand }: Props) => {
@@ -18,15 +23,16 @@ export const Apps = ({ resource, handleAppsExpand }: Props) => {
   const expandContentContainer = useRef(null);
 
   function handleExpand() {
-    let expandContentHeight =
-      expandContentContainer.current
-        ? expandContentContainer.current.scrollHeight
-        : contentHeight;
+    let expandContentHeight = expandContentContainer.current
+      ? expandContentContainer.current.scrollHeight
+      : contentHeight;
 
-      setcontentHeight(expandContentHeight)
-      setOverflowExpanded(!overflowExpanded)
+    setcontentHeight(expandContentHeight);
+    setOverflowExpanded(!overflowExpanded);
 
-    handleAppsExpand(overflowExpanded ? -expandContentHeight : expandContentHeight);
+    handleAppsExpand(
+      overflowExpanded ? -expandContentHeight : expandContentHeight
+    );
   }
 
   if (!resource.apps) return null;
@@ -41,9 +47,7 @@ export const Apps = ({ resource, handleAppsExpand }: Props) => {
   return (
     <AppsContainer overflowExpanded={overflowExpanded}>
       <SectionHeading>Apps</SectionHeading>
-      {appList && appList.map(app => (
-        <AppRow key={app.name} app={app} />
-      ))}
+      {appList && appList.map(app => <AppRow key={app.name} app={app} />)}
 
       {overflowAppList && (
         <React.Fragment>
@@ -52,23 +56,26 @@ export const Apps = ({ resource, handleAppsExpand }: Props) => {
             role="region"
             tabindex="-1"
             ref={expandContentContainer}
-            style={{ '--maxHeight': `${contentHeight}px` }}
+            style={{ "--maxHeight": `${contentHeight}px` }}
             aria-hidden={!overflowExpanded}
           >
-            {overflowAppList.map(app => <AppRow key={app.name} app={app} />)}
+            {overflowAppList.map(app => (
+              <AppRow key={app.name} app={app} />
+            ))}
           </ExpandContent>
-        
+
           <ExpandContainer
             onClick={handleExpand}
             role="button"
             aria-expanded={overflowExpanded}
             aria-controls={`apps_${resource.id}`}
           >
-            <Button type="button">Show {overflowExpanded ? "fewer" : "more"} choices</Button>
+            <Button type="button">
+              نمایش برنامه‌های {overflowExpanded ? "کمتر" : "بیشتر"}
+            </Button>
           </ExpandContainer>
         </React.Fragment>
       )}
     </AppsContainer>
   );
 };
-

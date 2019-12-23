@@ -1,67 +1,49 @@
 // @flow
-import * as React from 'react';
-import { NextSeo } from 'next-seo';
-import Page, { SectionHeading, Heading, Subheading } from '../components/Page';
+import * as React from "react";
+import { NextSeo } from "next-seo";
+import Page, { SectionHeading, Heading, Subheading } from "../components/Page";
 
 export default function About() {
   return (
     <Page showEmailCapture={false} displayProgress={false}>
       <NextSeo
         config={{
-          title: 'Security Checklist · About',
-          description: 'A checklist for staying safe on the internet',
+          title: "چک لیست امنیت اینترنتی · درباره",
+          description: "چک لیستی برای افزایش امنیت و حریم شخصی در اینترنت",
           openGraph: {
-            title: 'Security Checklist · About',
-            description: 'A checklist for staying safe on the internet',
-            url: 'https://securitycheckli.st/about',
-          },
+            title: "چک لیست امنیت اینترنتی · درباره",
+            description: "چک لیستی برای افزایش امنیت و حریم شخصی در اینترنت",
+            url: "https://amn.rostambot.com/about"
+          }
         }}
       />
 
       <SectionHeading>
-        <Heading>About</Heading>
+        <Heading>درباره</Heading>
 
         <Subheading>
-          This website provides a beginner’s checklist for staying safe on the
-          internet. This website is the result of a conversation started during
-          a{' '}
-          <a
-            href="https://spec.fm/podcasts/design-details/249464"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            recent episode
-          </a>{' '}
-          of the{' '}
-          <a
-            href="https://spec.fm/podcasts/design-details/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Design Details Podcast
-          </a>{' '}
-          and a subsequent tweet by{' '}
-          <a
-            href="https://twitter.com/mknepprath/status/1083966912420372481"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Michael Knepprath
-          </a>
-          .
-        </Subheading>
-
-        <Subheading>
-          The code that powers this website is{' '}
+          این پروژه، ترجمه و بومی‌سازی{" "}
           <a
             href="https://github.com/brianlovin/security-checklist"
             target="_blank"
             rel="noopener noreferrer"
           >
-            open source
-          </a>
-          . Please contribute if you’d like to see additional resources added to
-          this checklist.
+            این پروژه اپن‌سورس انگلیسی
+          </a>{" "}
+          است.
+        </Subheading>
+
+        <Subheading>
+          شما می‌توانید با مراجعه به{" "}
+          <a
+            href="https://github.com/hameds/security-checklist-fa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            مخزن پروژه فارسی
+          </a>{" "}
+          چک لیست امنیت اینترنتی در گیت‌هاب، به ما در بهتر شدن محتوای این چک
+          لیست و اضافه کردن منابع فارسی بیشتر کمک کنید.
         </Subheading>
       </SectionHeading>
     </Page>
