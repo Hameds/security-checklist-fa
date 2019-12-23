@@ -1,27 +1,27 @@
 export default {
-  title: 'Security Checklist',
-  description: 'A checklist for staying safe on the internet',
+  title: "چک لیست امنیت در اینترنت",
+  description: "چک لیستی برای ایمن بودن در اینترنت",
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://securitycheckli.st/',
-    title: 'Security Checklist',
-    description: 'A checklist for staying safe on the internet',
+    type: "website",
+    locale: "fa_IR",
+    url: "https://amn.rostambot.com/",
+    title: "چک لیست امنیت در اینترنت",
+    description: "چک لیستی برای ایمن بودن در اینترنت",
     defaultImageWidth: 512,
     defaultImageHeight: 512,
     images: [
       {
-        url: 'https://securitycheckli.st/static/og-image.png',
+        url: "https://amn.rostambot.com/static/og-image.png",
         width: 512,
         height: 512,
-        alt: 'Security Checklist',
-      },
+        alt: "چک لیست امنیت اینترنتی"
+      }
     ],
-    site_name: 'Security Checklist',
+    site_name: "چک لیست امنیت در اینترنت"
   },
   twitter: {
-    handle: '@brian_lovin',
-    site: '@brian_lovin',
-    cardType: 'summary_large_image',
-  },
+    handle: "@hamed",
+    site: "@rostambot",
+    cardType: "summary_large_image"
+  }
 };

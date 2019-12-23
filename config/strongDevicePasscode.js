@@ -1,26 +1,29 @@
 export default {
-  id: 'strongDevicePasscode',
-  title: 'Create a strong device passcode',
-  description: `A four-digit passcode for your phone or other devices is no longer considered secure. You should use a 6+ digit passcode at the very minimum, and for extra security use a 6+ character passcode containing both numbers and letters. TouchID and FaceID should be turned off when traveling internationally.
+  id: "strongDevicePasscode",
+  title: "کد عبور قوی برای دستگاه‌ استفاده کنید",
+  description: `کد عبور (PassCode) چهار رقمی برای گوشی تلفن همراه یا سایر دستگاه‌ها دیگر امن محسوب نمی‌شود. 
+  باید حداقل از یک کد عبور ۶+ رقمی استفاده کنید، و برای امنیت بیشتر از یک کد عبور ۶+ حرفی که شامل عدد و حروف می‌شود استفاده کنید.
   
-  \n\nYou should enforce a strict lock policy on your devices. Always require a passcode and ensure that a device is not left unattended for more than a minute or two.`,
+  اثر انگشت (TouchID) و تشخیص چهره (FaceID) را موقع مسافرت خاموش کنید.
+  
+  \n\nباید روال سخت‌گیرانه‌ای برای قفل شدن دستگاه‌هایتان اعمال کنید. همیشه برای باز شدن قفل به یک کد عبور نیاز باشد و اطمینان حاصل کنید که یک دستگاه بیش از یکی دو دقیقه بدون مراقبت رها نشود.`,
   resources: [
     {
-      name: 'How long it takes to break a passcode',
-      url: 'http://fortune.com/2016/03/18/apple-fbi-iphone-passcode-hack/',
+      name: "How long it takes to break a passcode",
+      url: "http://fortune.com/2016/03/18/apple-fbi-iphone-passcode-hack/"
     },
     {
-      name: 'How to temporarily disable TouchID or FaceID',
+      name: "How to temporarily disable TouchID or FaceID",
       url:
-        'https://www.iphonelife.com/content/how-to-temporarily-disable-touch-id-or-face-id-your-iphone',
+        "https://www.iphonelife.com/content/how-to-temporarily-disable-touch-id-or-face-id-your-iphone"
     },
     {
-      name: 'Changing your iOS passcode',
-      url: 'https://support.apple.com/en-us/HT204060',
+      name: "Changing your iOS passcode",
+      url: "https://support.apple.com/en-us/HT204060"
     },
     {
-      name: 'Changing your Android passcode',
-      url: 'https://phandroid.com/2014/03/20/android-101-lock-screen/',
-    },
-  ],
+      name: "Changing your Android passcode",
+      url: "https://phandroid.com/2014/03/20/android-101-lock-screen/"
+    }
+  ]
 };

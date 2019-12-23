@@ -1,7 +1,7 @@
 // @flow
-import styled from 'styled-components';
-import { hexa, tint } from '../globals';
-import { theme } from '../theme';
+import styled from "styled-components";
+import { hexa, tint } from "../globals";
+import { theme } from "../theme";
 
 export const Container = styled.div`
   display: flex;
@@ -10,6 +10,7 @@ export const Container = styled.div`
   align-items: center;
   height: 100%;
   max-width: 100%;
+  direction: rtl;
 `;
 
 export const InnerContainer = styled.div`
@@ -73,7 +74,8 @@ export const Subheading = styled.p`
     text-decoration: underline;
     text-decoration-color: ${theme.text.tertiary};
   }
-  a:active, a:focus {
+  a:active,
+  a:focus {
     box-shadow: 0 0 0 1px ${theme.bg.default},
       0 0 0 3px ${props => hexa(props.theme.text.tertiary, 0.25)};
   }
@@ -108,14 +110,14 @@ export const ScrollToTop = styled.button`
   justify-content: center;
   position: fixed;
   bottom: 16px;
-  right: 16px;
+  left: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.2s ease-in-out;
-  opacity: ${props => (props.isVisible ? '1' : '0')};
+  opacity: ${props => (props.isVisible ? "1" : "0")};
   background: ${theme.text.default};
   background-image: radial-gradient(circle at top right, #a913de, #6ac9ff);
   color: ${theme.bg.default};
-  transform: translateY(${props => (props.isVisible ? '0' : '80px')});
+  transform: translateY(${props => (props.isVisible ? "0" : "80px")});
   cursor: pointer;
   z-index: 9999;
 
@@ -125,9 +127,9 @@ export const ScrollToTop = styled.button`
     transition: all 0.2s ease-in-out;
   }
 
-  &:active, &:focus {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09),
-      0 0 0 1px ${theme.bg.default},
+  &:active,
+  &:focus {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09), 0 0 0 1px ${theme.bg.default},
       0 0 0 3px ${props => hexa(props.theme.brand.default, 0.5)};
     outline: none;
     transform: translateY(-2px);

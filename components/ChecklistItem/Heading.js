@@ -1,12 +1,12 @@
 // @flow
-import React from 'react';
-import { Title, Uncollapse } from './style';
-import type { ChecklistResource } from '../../types';
+import React from "react";
+import { Title, Uncollapse } from "./style";
+import type { ChecklistResource } from "../../types";
 
 type Props = {
   resource: ChecklistResource,
   isCollapsed: boolean,
-  handleCollapse: Function,
+  handleCollapse: Function
 };
 
 export const Heading = ({ resource, isCollapsed, handleCollapse }: Props) => (
@@ -19,7 +19,7 @@ export const Heading = ({ resource, isCollapsed, handleCollapse }: Props) => (
         aria-expanded={!isCollapsed}
         type="button"
       >
-        {isCollapsed ? 'Show details' : 'Hide details'}
+        {isCollapsed ? "نمایش توضیحات" : "پنهان کردن توضیحات"}
       </Uncollapse>
     </Title>
   </React.Fragment>

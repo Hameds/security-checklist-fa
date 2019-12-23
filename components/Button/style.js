@@ -1,39 +1,39 @@
 // @flow
-import styled, { css } from 'styled-components';
-import { hexa, tint } from '../globals';
-import type { ButtonSize } from './types';
-import { theme } from '../theme';
-import dynamic from 'next/dynamic';
+import styled, { css } from "styled-components";
+import { hexa, tint } from "../globals";
+import type { ButtonSize } from "./types";
+import { theme } from "../theme";
+import dynamic from "next/dynamic";
 
-const Clipboard = dynamic(() => import('react-clipboard.js'), {
+const Clipboard = dynamic(() => import("react-clipboard.js"), {
   ssr: false,
-  loading: () => null,
+  loading: () => null
 });
 
 const getPadding = (size: ButtonSize) => {
   switch (size) {
-    case 'small':
-      return '4px 8px';
-    case 'default':
-      return '10px 20px';
-    case 'large':
-      return '14px 28px';
+    case "small":
+      return "4px 8px";
+    case "default":
+      return "10px 20px";
+    case "large":
+      return "14px 28px";
     default: {
-      return '10px 20px';
+      return "10px 20px";
     }
   }
 };
 
 const getFontSize = (size: ButtonSize) => {
   switch (size) {
-    case 'small':
-      return '14px';
-    case 'default':
-      return '16px';
-    case 'large':
-      return '18px';
+    case "small":
+      return "14px";
+    case "default":
+      return "16px";
+    case "large":
+      return "18px";
     default: {
-      return '16px';
+      return "16px";
     }
   }
 };
@@ -56,20 +56,23 @@ export const base = css`
   position: relative;
   text-align: center;
   padding: ${props => getPadding(props.size)};
-  opacity: ${props => (props.disabled ? '0.64' : '1')};
+  opacity: ${props => (props.disabled ? "0.64" : "1")};
   box-shadow: ${props =>
-    props.disabled ? 'none' : `0 1px 2px rgba(0,0,0,0.04)`};
+    props.disabled ? "none" : `0 1px 2px rgba(0,0,0,0.04)`};
 
   &:disabled {
     cursor: not-allowed;
   }
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     transition: all 0.2s ease-in-out;
     box-shadow: ${props =>
-      props.disabled ? 'none' : `${theme.shadows.button}`};
+      props.disabled ? "none" : `${theme.shadows.button}`};
   }
-  &:active, &:focus {
+  &:active,
+  &:focus {
     box-shadow: 0 0 0 1px ${theme.bg.default},
       0 0 0 3px ${props => hexa(props.theme.text.tertiary, 0.5)};
   }
@@ -81,9 +84,7 @@ export const Button = styled.button`
   color: ${theme.text.secondary};
   background-color: ${theme.bg.default};
   background-image: ${props =>
-    `linear-gradient(to bottom, ${props.theme.bg.default}, ${
-      props.theme.bg.wash
-    })`};
+    `linear-gradient(to bottom, ${props.theme.bg.default}, ${props.theme.bg.wash})`};
   
   &:hover {
     color: ${theme.text.default};
@@ -92,9 +93,7 @@ export const Button = styled.button`
   &:active {
     border: 1px solid ${theme.border.active};
     background-image: ${props =>
-      `linear-gradient(to top, ${props.theme.bg.default}, ${
-        props.theme.bg.wash
-      })`};
+      `linear-gradient(to top, ${props.theme.bg.default}, ${props.theme.bg.wash})`};
   }
 
   &:focus {
@@ -110,9 +109,7 @@ export const PrimaryButton = styled.button`
   color: ${theme.bg.default};
   background-color: ${theme.brand.alt};
   background-image: ${props =>
-    `linear-gradient(to bottom, ${props.theme.brand.alt}, ${
-      props.theme.brand.default
-    })`};
+    `linear-gradient(to bottom, ${props.theme.brand.alt}, ${props.theme.brand.default})`};
   text-shadow: 0 1px 1px rgba(0,0,0,0.08);
 
   &:hover {
@@ -122,15 +119,13 @@ export const PrimaryButton = styled.button`
         props.theme.brand.default,
         16
       )})`};
-    box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
+    box-shadow: ${props => (props.disabled ? "none" : theme.shadows.button)};
   }
 
   &:active {
     border: 1px solid ${theme.brand.default};
     background-image: ${props =>
-      `linear-gradient(to top, ${props.theme.brand.alt}, ${
-        props.theme.brand.default
-      })`};
+      `linear-gradient(to top, ${props.theme.brand.alt}, ${props.theme.brand.default})`};
   }
 
   &:focus {
@@ -147,13 +142,16 @@ export const GhostButton = styled.button`
   background-color: transparent;
   background-image: none;
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     background: ${props => tint(props.theme.bg.wash, -8)};
     color: ${theme.text.default};
     box-shadow: none;
   }
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     box-shadow: 0 0 0 1px ${theme.bg.default},
       0 0 0 3px ${props => hexa(props.theme.text.tertiary, 0.25)};
   }
@@ -241,9 +239,7 @@ export const FacebookButton = styled.a`
   color: ${theme.bg.default};
   background-color: ${theme.social.facebook};
   background-image: ${props =>
-    `linear-gradient(to bottom, ${props.theme.social.facebook}, ${
-      props.theme.social.facebook
-    })`};
+    `linear-gradient(to bottom, ${props.theme.social.facebook}, ${props.theme.social.facebook})`};
   text-shadow: 0 1px 1px rgba(0,0,0,0.08);
 
   .icon {
@@ -258,21 +254,19 @@ export const FacebookButton = styled.a`
         props.theme.social.facebook,
         16
       )}, ${tint(props.theme.social.facebook, 16)})`};
-    box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
+    box-shadow: ${props => (props.disabled ? "none" : theme.shadows.button)};
   }
 
   &:active {
     border: 1px solid ${theme.social.facebook};
     background-image: ${props =>
-      `linear-gradient(to top, ${props.theme.social.facebook}, ${
-        props.theme.social.facebook
-      })`};
+      `linear-gradient(to top, ${props.theme.social.facebook}, ${props.theme.social.facebook})`};
   }
 
   &:focus {
     box-shadow: 0 0 0 1px ${props =>
       props.theme.bg.default}, 0 0 0 3px ${props =>
-        hexa(props.theme.social.facebook, 0.5)};
+  hexa(props.theme.social.facebook, 0.5)};
   }
 `;
 
@@ -282,14 +276,12 @@ export const TwitterButton = styled.a`
   color: ${theme.bg.default};
   background-color: ${theme.social.twitter};
   background-image: ${props =>
-    `linear-gradient(to bottom, ${props.theme.social.twitter}, ${
-      props.theme.social.twitter
-    })`};
+    `linear-gradient(to bottom, ${props.theme.social.twitter}, ${props.theme.social.twitter})`};
   text-shadow: 0 1px 1px rgba(0,0,0,0.08);
 
   .icon {
-    margin-right: 8px;
-    margin-left: -4px;
+    margin-right: -4px;
+    margin-left: 8px;
   }
 
   &:hover {
@@ -299,15 +291,13 @@ export const TwitterButton = styled.a`
         props.theme.social.twitter,
         4
       )}, ${tint(props.theme.social.twitter, 4)})`};
-    box-shadow: ${props => (props.disabled ? 'none' : theme.shadows.button)};
+    box-shadow: ${props => (props.disabled ? "none" : theme.shadows.button)};
   }
 
   &:active {
     border: 1px solid ${theme.social.twitter};
     background-image: ${props =>
-      `linear-gradient(to top, ${props.theme.social.twitter}, ${
-        props.theme.social.twitter
-      })`};
+      `linear-gradient(to top, ${props.theme.social.twitter}, ${props.theme.social.twitter})`};
   }
 
   &:focus {
@@ -360,16 +350,15 @@ export const CopyLinkButton = styled(Clipboard)`
   }
 
   .icon {
-    margin-right: 8px;
-    margin-left: -4px;
+    margin-right: -4px;
+    margin-left: 8px;
   }
 
   &:focus {
     box-shadow: 0 0 0 1px ${props =>
       props.theme.bg.default}, 0 0 0 3px ${props =>
-        props.isClicked
-          ? hexa(props.theme.success.default, 0.5)
-          : props.theme.border.default};
+  props.isClicked
+    ? hexa(props.theme.success.default, 0.5)
+    : props.theme.border.default};
   }
 `;
-

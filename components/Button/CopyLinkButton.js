@@ -1,13 +1,13 @@
 // @flow
 // $FlowIssue
-import React, { useState } from 'react';
-import { CopyLinkButton as StyledCopyLinkButton } from './style';
-import Icon from '../Icon';
-import type { ButtonProps } from './types';
+import React, { useState } from "react";
+import { CopyLinkButton as StyledCopyLinkButton } from "./style";
+import Icon from "../Icon";
+import type { ButtonProps } from "./types";
 
 type CopyLinkProps = {
   ...$Exact<ButtonProps>,
-  text: string,
+  text: string
 };
 
 export default function CopyLinkButton(props: CopyLinkProps) {
@@ -31,7 +31,7 @@ export default function CopyLinkButton(props: CopyLinkProps) {
       {...props}
     >
       <Icon glyph="link" size={24} />
-      <span>{isClicked ? 'Copied!' : children}</span>
+      <span>{isClicked ? "لینک، کپی شد" : children}</span>
     </StyledCopyLinkButton>
   );
 }
