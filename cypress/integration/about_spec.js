@@ -4,6 +4,6 @@ describe('About', () => {
   });
 
   it('should render about', () => {
-    cy.contains('About');
+    cy.contains('درباره');
   });
 });
