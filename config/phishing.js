@@ -13,6 +13,11 @@ export default {
   \n\n لازم است درباره فیشینگ و چگونگی تشخیص آن بیشتر مطالعه کنید.`,
   resources: [
     {
+      name: "فیشینگ چیست؟ چگونه سایت‌های کلاهبرداری را شناسایی کنیم؟",
+      url:
+        "https://www.zoomit.ir/2019/12/17/343329/what-is-phishing/"
+    },
+    {
       name: "Podcast: What kind of idiot gets phished?",
       url:
         "https://www.gimletmedia.com/reply-all/97-what-kind-of-idiot-gets-phished"

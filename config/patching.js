@@ -9,6 +9,11 @@ export default {
   `,
   resources: [
     {
+      name: "چرا نباید مانع آپدیت شدن ویندوز شویم؟",
+      url:
+        "https://www.zoomit.ir/2019/6/4/336637/should-not-stop-windows-10-update/"
+    },
+    {
       name: "Stop putting off your device updates—here's why",
       url: "https://www.popsci.com/update-every-gadget"
     },
