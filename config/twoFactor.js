@@ -84,6 +84,10 @@ export default {
   ],
   resources: [
     {
+      name: "راهنمای فارسی گوگل درباره احراز هویت دو مرحله‌ای",
+      url: "https://www.google.com/landing/2step/?hl=fa"
+    },
+    {
       name: "What is two-factor authentication?",
       url: "https://authy.com/what-is-2fa/"
     },
