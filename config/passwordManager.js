@@ -107,6 +107,11 @@ export default {
   ],
   resources: [
     {
+      name: "برنامه‌های مدیریت رمز عبور چه کاربردی دارند",
+      url:
+        "https://www.zoomit.ir/2018/6/2/271954/best-password-managers-reviews-and-buying-advice/"
+    },
+    {
       name: "How to use a password manager (and why you really should)",
       url:
         "https://www.theverge.com/2017/7/24/15921282/best-password-manager-1password-lastpass-dashlane-how-to"
