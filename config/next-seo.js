@@ -4,14 +4,14 @@ export default {
   openGraph: {
     type: "website",
     locale: "fa_IR",
-    url: "https://amn.rostambot.com/",
+    url: "https://amn.darinternet.com/",
     title: "چک لیست امنیت در اینترنت",
     description: "چک لیستی برای ایمن بودن در اینترنت",
     defaultImageWidth: 512,
     defaultImageHeight: 512,
     images: [
       {
-        url: "https://amn.rostambot.com/static/og-image.png",
+        url: "https://amn.darinternet.com/static/og-image.png",
         width: 512,
         height: 512,
         alt: "چک لیست امنیت اینترنتی"
@@ -21,7 +21,7 @@ export default {
   },
   twitter: {
     handle: "@hamed",
-    site: "@rostambot",
+    site: "@hamed",
     cardType: "summary_large_image"
   }
 };
