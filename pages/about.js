@@ -13,7 +13,7 @@ export default function About() {
           openGraph: {
             title: "چک لیست امنیت اینترنتی · درباره",
             description: "چک لیستی برای افزایش امنیت و حریم شخصی در اینترنت",
-            url: "https://amn.darinternet.com/about"
+            url: "https://amn.hamed.blog/about"
           }
         }}
       />
