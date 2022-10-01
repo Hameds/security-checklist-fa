@@ -21,7 +21,6 @@
     "lint:staged": "lint-staged"
   },
   "dependencies": {
-    "fathom-client": "^2.0.3",
     "next": "^10.0.3",
     "next-seo": "^4.17.0",
     "react": "^16.14.0",
