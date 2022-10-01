@@ -21,7 +21,7 @@
     "lint:staged": "lint-staged"
   },
   "dependencies": {
-    "next": "^10.0.3",
+    "next": "^12.3.1",
     "next-seo": "^4.17.0",
     "react": "^16.14.0",
     "react-clipboard.js": "^2.0.16",
