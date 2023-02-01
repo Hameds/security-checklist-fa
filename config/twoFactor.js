@@ -62,6 +62,15 @@ export default {
       }
     },
     {
+      name: "Aegis Authenticator",
+      image: "/static/img/aegis.png",
+      url: "https://getaegis.app/",
+      sources: {
+        android:
+          "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis"
+      }
+    },
+    {
       name: "YubiKey",
       image: "/static/img/yubico.jpg",
       url: "https://www.yubico.com/"
