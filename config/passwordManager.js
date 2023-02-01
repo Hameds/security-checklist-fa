@@ -20,22 +20,7 @@ export default {
         android: "https://1password.com/downloads/android/",
         linux: "https://1password.com/downloads/linux/"
       }
-    },
-    {
-      name: "LastPass",
-      image: "/static/img/lastpass.jpg",
-      url: "https://www.lastpass.com/",
-      sources: {
-        windows:
-          "https://download.cloud.lastpass.com/windows_installer/lastpass.exe",
-        macos:
-          "https://itunes.apple.com/us/app/lastpass/id926036361?ls=1&mt=12",
-        ios:
-          "https://itunes.apple.com/us/app/lastpass-password-manager/id324613447",
-        android: "https://lastpass.com/android_market.php",
-        linux: "https://lastpass.com/misc_download2.php"
-      }
-    },
+    },    
     {
       name: "Dashlane",
       image: "/static/img/dashlane.jpg",

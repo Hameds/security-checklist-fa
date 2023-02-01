@@ -50,22 +50,7 @@ export default {
         android:
           "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_us"
       }
-    },
-    {
-      name: "LastPass",
-      image: "/static/img/lastpass.jpg",
-      url: "https://www.lastpass.com/",
-      sources: {
-        windows:
-          "https://download.cloud.lastpass.com/windows_installer/lastpass.exe",
-        macos:
-          "https://itunes.apple.com/us/app/lastpass/id926036361?ls=1&mt=12",
-        ios:
-          "https://itunes.apple.com/us/app/lastpass-password-manager/id324613447",
-        android: "https://lastpass.com/android_market.php",
-        linux: "https://lastpass.com/misc_download2.php"
-      }
-    },
+    },    
     {
       name: "Microsoft Authenticator",
       image: "/static/img/microsoft_authenticator_80.png",
