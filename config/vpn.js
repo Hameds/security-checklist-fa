@@ -9,28 +9,16 @@ export default {
     `,
   apps: [
     {
-      name: "IVPN",
-      image: "/static/img/ivpn.jpg",
-      url: "https://www.ivpn.net/",
+      name: "NordVPN",
+      image: "/static/img/nordvpn.jpg",
+      url: "https://nordvpn.com/",
       sources: {
-        windows: "https://www.ivpn.net/apps-windows",
-        macos: "https://www.ivpn.net/apps-macos",
-        ios: "https://www.ivpn.net/apps-ios",
-        android: "https://www.ivpn.net/apps-android",
-        linux: "https://www.ivpn.net/setup/gnu-linux-terminal.html"
-      }
-    },
-    {
-      name: "Encrypt.me",
-      image: "/static/img/encrypt-me.jpg",
-      url: "https://encrypt.me/",
-      sources: {
-        windows: "https://app.encrypt.me/transition/download/windows/latest/",
-        macos: "https://app.encrypt.me/transition/download/osx/latest/",
-        ios: "https://itunes.apple.com/us/app/encrypt-me/id473835722?ls=1&mt=8",
-        android:
-          "https://play.google.com/store/apps/details?id=com.stackpath.cloak"
-      }
+        windows: "https://nordvpn.com/download/windows/",
+        macos: "https://nordvpn.com/download/mac/",
+        ios: "https://nordvpn.com/download/ios/",
+        android: "https://nordvpn.com/download/android/",
+        linux: "https://nordvpn.com/tutorials/linux/",
+      },
     },
     {
       name: "ExpressVPN",
@@ -43,20 +31,8 @@ export default {
         ios: "https://www.expressvpn.com/vpn-software/vpn-ios",
         android: "https://www.expressvpn.com/vpn-software/vpn-android",
         linux:
-          "https://www.expressvpn.com/support/vpn-setup/manual-config-for-linux-with-openvpn/"
-      }
-    },
-    {
-      name: "NordVPN",
-      image: "/static/img/nordvpn.jpg",
-      url: "https://nordvpn.com/",
-      sources: {
-        windows: "https://nordvpn.com/download/windows/",
-        macos: "https://nordvpn.com/download/mac/",
-        ios: "https://nordvpn.com/download/ios/",
-        android: "https://nordvpn.com/download/android/",
-        linux: "https://nordvpn.com/tutorials/linux/"
-      }
+          "https://www.expressvpn.com/support/vpn-setup/manual-config-for-linux-with-openvpn/",
+      },
     },
     {
       name: "ProtonVPN",
@@ -65,12 +41,48 @@ export default {
       sources: {
         windows: "https://protonvpn.com/download/",
         macos: "https://protonvpn.com/download/",
-        ios:
-          "https://itunes.apple.com/us/app/protonvpn-fast-secure-vpn/id1437005085",
+        ios: "https://itunes.apple.com/us/app/protonvpn-fast-secure-vpn/id1437005085",
         android:
           "https://play.google.com/store/apps/details?id=com.protonvpn.android",
-        linux: "https://protonvpn.com/download/#dl-clients"
-      }
+        linux: "https://protonvpn.com/download/#dl-clients",
+      },
+    },
+    {
+      name: "Mullvad VPN",
+      image: "/static/img/mullvand.png",
+      url: "https://mullvad.net/",
+      sources: {
+        windows: "https://mullvad.net/download/app/exe/latest/",
+        macos: "https://mullvad.net/download/app/pkg/latest/",
+        ios: "https://apps.apple.com/app/mullvad-vpn/id1488466513",
+        android:
+          "https://play.google.com/store/apps/details?id=net.mullvad.mullvadvpn",
+        linux: "https://mullvad.net/en/download/linux/",
+      },
+    },
+    {
+      name: "IVPN",
+      image: "/static/img/ivpn.jpg",
+      url: "https://www.ivpn.net/",
+      sources: {
+        windows: "https://www.ivpn.net/apps-windows",
+        macos: "https://www.ivpn.net/apps-macos",
+        ios: "https://www.ivpn.net/apps-ios",
+        android: "https://www.ivpn.net/apps-android",
+        linux: "https://www.ivpn.net/setup/gnu-linux-terminal.html",
+      },
+    },
+    {
+      name: "Encrypt.me",
+      image: "/static/img/encrypt-me.jpg",
+      url: "https://encrypt.me/",
+      sources: {
+        windows: "https://app.encrypt.me/transition/download/windows/latest/",
+        macos: "https://app.encrypt.me/transition/download/osx/latest/",
+        ios: "https://itunes.apple.com/us/app/encrypt-me/id473835722?ls=1&mt=8",
+        android:
+          "https://play.google.com/store/apps/details?id=com.stackpath.cloak",
+      },
     },
     {
       name: "Private Internet Access",
@@ -81,41 +93,38 @@ export default {
           "https://www.privateinternetaccess.com/installer/x/download_installer_win/64",
         macos:
           "https://www.privateinternetaccess.com/installer/x/download_installer_osx",
-        ios:
-          "https://itunes.apple.com/us/app/private-internet-access-anonymous/id955626407?mt=8&uo=6&at=1001l3Gx&ct=web",
+        ios: "https://itunes.apple.com/us/app/private-internet-access-anonymous/id955626407?mt=8&uo=6&at=1001l3Gx&ct=web",
         android:
           "https://play.google.com/store/apps/details?id=com.privateinternetaccess.android&hl=en",
         linux:
-          "https://www.privateinternetaccess.com/installer/x/download_installer_linux"
-      }
+          "https://www.privateinternetaccess.com/installer/x/download_installer_linux",
+      },
     },
     {
       name: "Guardian Firewall",
       image: "/static/img/guardian.png",
       url: "https://guardianapp.com",
       sources: {
-        ios: "https://itunes.apple.com/us/app/guardian-firewall/id1363796315"
-      }
-    }
+        ios: "https://itunes.apple.com/us/app/guardian-firewall/id1363796315",
+      },
+    },
   ],
   resources: [
     {
       name: "Why you should be using a VPN",
-      url:
-        "https://lifehacker.com/5940565/why-you-should-start-using-a-vpn-and-how-to-choose-the-best-one-for-your-needs"
+      url: "https://lifehacker.com/5940565/why-you-should-start-using-a-vpn-and-how-to-choose-the-best-one-for-your-needs",
     },
     {
       name: "What is a VPN and why you need one",
-      url: "https://www.pcmag.com/article/352757/you-need-a-vpn-and-heres-why"
+      url: "https://www.pcmag.com/article/352757/you-need-a-vpn-and-heres-why",
     },
     {
       name: "Why you should use a VPN on a public Wi-Fi network",
-      url:
-        "https://www.macworld.com/article/3322951/security/why-you-should-use-a-vpn-on-a-public-wi-fi-network.html"
+      url: "https://www.macworld.com/article/3322951/security/why-you-should-use-a-vpn-on-a-public-wi-fi-network.html",
     },
     {
       name: "A detailed VPN provider comparison chart",
-      url: "https://thatoneprivacysite.net/vpn-comparison-chart/"
-    }
-  ]
+      url: "https://thatoneprivacysite.net/vpn-comparison-chart/",
+    },
+  ],
 };
