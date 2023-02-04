@@ -92,28 +92,14 @@ export default {
   ],
   resources: [
     {
-      name: "برنامه‌های مدیریت رمز عبور چه کاربردی دارند",
+      name: "اشتراک‌گذاری کلمه عبور، متن و فایل به صورت امن با Bitwarden",
       url:
-        "https://www.zoomit.ir/2018/6/2/271954/best-password-managers-reviews-and-buying-advice/"
+        "https://hamed.blog/bitwarden-send/"
     },
     {
-      name: "How to use a password manager (and why you really should)",
+      name: "مهاجرت ساده از LastPass به Bitwarden. چرا و چگونه؟",
       url:
-        "https://www.theverge.com/2017/7/24/15921282/best-password-manager-1password-lastpass-dashlane-how-to"
-    },
-    {
-      name: "How password managers work and why you should use one",
-      url:
-        "https://motherboard.vice.com/en_us/article/59yv5x/how-password-managers-work-and-why-you-should-use-one"
-    },
-    {
-      name: "Password managers compared",
-      url:
-        "https://www.howtogeek.com/240255/password-managers-compared-lastpass-vs-keepass-vs-dashlane-vs-1password/"
-    },
-    {
-      name: "Have I Been Pwned: Find out if your passwords have been hacked",
-      url: "https://haveibeenpwned.com/"
+        "https://hamed.blog/lastpass-to-bitwarden/"
     }
   ]
 };
