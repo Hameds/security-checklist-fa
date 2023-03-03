@@ -20,6 +20,10 @@ export default {
   ],
   resources: [
     {
+      name: "بازبینی حریم شخصی گوگل",
+      url: "https://hamed.blog/safe-fridays-google-privacy/"
+    },
+    {
       name: "Facebook privacy settings",
       url: "https://www.facebook.com/settings?tab=privacy"
     },
