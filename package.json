@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A checklist for staying safe on the internet",
   "engines": {
-    "node": "14.x"
+    "node": "24.x"
   },
   "scripts": {
     "now-build": "next build",
