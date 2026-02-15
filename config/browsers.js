@@ -8,7 +8,7 @@ export default {
   apps: [
     {
       name: "Firefox",
-      image: "static/img/firefox.jpg",
+      image: "/security-checklist/static/img/firefox.jpg",
       url: "https://www.mozilla.org/en-US/firefox/",
       sources: {
         windows: "https://www.mozilla.org/en-US/firefox/",
@@ -20,7 +20,7 @@ export default {
     },
     {
       name: "Tor",
-      image: "static/img/tor.png",
+      image: "/security-checklist/static/img/tor.png",
       url: "https://www.torproject.org/",
       sources: {
         windows:
@@ -33,7 +33,7 @@ export default {
     },
     {
       name: "Safari",
-      image: "static/img/safari.jpg",
+      image: "/security-checklist/static/img/safari.jpg",
       url: "https://www.apple.com/safari/",
       sources: {
         macos: "https://www.apple.com/safari/",
@@ -42,7 +42,7 @@ export default {
     },
     {
       name: "Librewolf",
-      image: "static/img/librewolf.png",
+      image: "/security-checklist/static/img/librewolf.png",
       url: "https://librewolf.net/",
       sources: {
         windows: "https://librewolf.net/installation/windows/",
@@ -52,7 +52,7 @@ export default {
     },
     {
       name: "DuckDuckGo",
-      image: "static/img/duckduckgo.jpg",
+      image: "/security-checklist/static/img/duckduckgo.jpg",
       url: "https://duckduckgo.com/app",
       sources: {
         ios: "https://apps.apple.com/app/duckduckgo-privacy-browser/id663592361",

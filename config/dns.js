@@ -12,7 +12,7 @@ export default {
   apps: [
     {
       name: "1.1.1.1",
-      image: "static/img/1111.jpg",
+      image: "/security-checklist/static/img/1111.jpg",
       url: "https://www.cloudflare.com/learning/dns/what-is-1.1.1.1/",
       sources: {
         windows: "https://one.one.one.one/",
@@ -26,7 +26,7 @@ export default {
     },
     {
       name: "9.9.9.9",
-      image: "static/img/9999.jpg",
+      image: "/security-checklist/static/img/9999.jpg",
       url: "https://www.quad9.net/about/",
       sources: {
         windows: "https://www.quad9.net/microsoft/",

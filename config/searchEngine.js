@@ -6,7 +6,7 @@ export default {
   apps: [
     {
       name: "DuckDuckGo",
-      image: "static/img/duckduckgo.jpg",
+      image: "/security-checklist/static/img/duckduckgo.jpg",
       url: "https://duckduckgo.com/",
       sources: {
         windows: "https://duckduckgo.com",

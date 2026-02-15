@@ -20,7 +20,7 @@ export default {
   apps: [
     {
       name: "1Password",
-      image: "static/img/1password.jpg",
+      image: "/security-checklist/static/img/1password.jpg",
       url: "https://1password.com/",
       sources: {
         windows: "https://1password.com/downloads/windows/",
@@ -32,7 +32,7 @@ export default {
     },
     {
       name: "Authy",
-      image: "static/img/authy.jpg",
+      image: "/security-checklist/static/img/authy.jpg",
       url: "https://authy.com/",
       sources: {
         windows: "https://authy.com/download/",
@@ -43,7 +43,7 @@ export default {
     },
     {
       name: "Google Authenticator",
-      image: "static/img/google-authenticator.jpg",
+      image: "/security-checklist/static/img/google-authenticator.jpg",
       url: "https://www.google.com/landing/2step/",
       sources: {
         ios: "https://itunes.apple.com/us/app/google-authenticator/id388497605",
@@ -53,7 +53,7 @@ export default {
     },    
     {
       name: "Microsoft Authenticator",
-      image: "static/img/microsoft_authenticator_80.png",
+      image: "/security-checklist/static/img/microsoft_authenticator_80.png",
       url: "https://www.microsoft.com/en-us/account/authenticator",
       sources: {
         ios: "https://itunes.apple.com/app/microsoft-authenticator/id983156458",
@@ -63,7 +63,7 @@ export default {
     },
     {
       name: "Aegis Authenticator",
-      image: "static/img/aegis.png",
+      image: "/security-checklist/static/img/aegis.png",
       url: "https://getaegis.app/",
       sources: {
         android:
@@ -72,7 +72,7 @@ export default {
     },
     {
       name: "YubiKey",
-      image: "static/img/yubico.jpg",
+      image: "/security-checklist/static/img/yubico.jpg",
       url: "https://www.yubico.com/"
     }
   ],
