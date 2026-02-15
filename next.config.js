@@ -8,4 +8,6 @@ module.exports = {
 
     return config;
   },
+  basePath: "/security-checklist",
+  assetPrefix: "/security-checklist"
 };
