@@ -7,7 +7,7 @@ export default {
   apps: [
     {
       name: "iMessage",
-      image: "/static/img/imessage.png",
+      image: "./static/img/imessage.png",
       url: "https://support.apple.com/explore/messages",
       sources: {
         macos: "https://support.apple.com/explore/messages",
@@ -16,7 +16,7 @@ export default {
     },
     {
       name: "WhatsApp",
-      image: "/static/img/whatsapp.jpg",
+      image: "./static/img/whatsapp.jpg",
       url: "https://www.whatsapp.com/",
       sources: {
         windows: "https://www.whatsapp.com/download",
@@ -27,7 +27,7 @@ export default {
     },
     {
       name: "Signal",
-      image: "/static/img/signal.jpg",
+      image: "./static/img/signal.jpg",
       url: "https://www.signal.org/",
       sources: {
         windows: "https://www.signal.org/download/",
@@ -40,7 +40,7 @@ export default {
     },
     {
       name: "Session",
-      image: "/static/img/session.png",
+      image: "./static/img/session.png",
       url: "https://getsession.org/",
       sources: {
         windows: "https://getsession.org/windows",
