@@ -11,7 +11,7 @@ export default {
   apps: [
     {
       name: "Jumbo",
-      image: "./static/img/jumbo.png",
+      image: "static/img/jumbo.png",
       url: "https://www.jumboprivacy.com/",
       sources: {
         ios: "https://apps.apple.com/us/app/jumbo-privacy/id1454039975"

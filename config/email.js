@@ -6,7 +6,7 @@ export default {
   apps: [
     {
       name: "FastMail",
-      image: "./static/img/fastmail.jpg",
+      image: "static/img/fastmail.jpg",
       url: "https://www.fastmail.com/",
       sources: {
         windows: "https://www.fastmail.com/",
@@ -20,7 +20,7 @@ export default {
     },
     {
       name: "ProtonMail",
-      image: "./static/img/protonmail.jpg",
+      image: "static/img/protonmail.jpg",
       url: "https://protonmail.com//",
       sources: {
         windows: "https://protonmail.com/",
@@ -34,7 +34,7 @@ export default {
     },
     {
       name: "Tutanota",
-      image: "./static/img/tutanota.jpg",
+      image: "static/img/tutanota.jpg",
       url: "https://tutanota.com/",
       sources: {
         windows: "https://mail.tutanota.com/desktop/tutanota-desktop-win.exe",
@@ -48,7 +48,7 @@ export default {
     },
     {
       name: "Burner Mail",
-      image: "./static/img/burnermail.jpg",
+      image: "static/img/burnermail.jpg",
       url: "https://burnermail.io/",
       sources: {
         windows: "https://burnermail.io/",

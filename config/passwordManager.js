@@ -11,7 +11,7 @@ export default {
   apps: [
     {
       name: "1Password",
-      image: "./static/img/1password.jpg",
+      image: "static/img/1password.jpg",
       url: "https://1password.com/",
       sources: {
         windows: "https://1password.com/downloads/windows/",
@@ -23,7 +23,7 @@ export default {
     },    
     {
       name: "Dashlane",
-      image: "./static/img/dashlane.jpg",
+      image: "static/img/dashlane.jpg",
       url: "https://www.dashlane.com/",
       sources: {
         windows: "https://www.dashlane.com/directdownload?target=archive_win",
@@ -37,7 +37,7 @@ export default {
     },
     {
       name: "Bitwarden",
-      image: "./static/img/bitwarden.jpg",
+      image: "static/img/bitwarden.jpg",
       url: "https://www.bitwarden.com/",
       sources: {
         windows:
@@ -54,7 +54,7 @@ export default {
     },
     {
       name: "Buttercup",
-      image: "./static/img/buttercup.png",
+      image: "static/img/buttercup.png",
       url: "https://buttercup.pw/",
       sources: {
         windows:
@@ -71,7 +71,7 @@ export default {
     },
     {
       name: "Avast Passwords",
-      image: "./static/img/avast-passwords.png",
+      image: "static/img/avast-passwords.png",
       url: "https://www.avast.com/passwords",
       sources: {
         windows: "https://www.avast.com/passwords#pc",
@@ -82,7 +82,7 @@ export default {
     },
     {
       name: "iCloud Keychain",
-      image: "./static/img/icloud.png",
+      image: "static/img/icloud.png",
       url: "https://www.icloud.com/",
       sources: {
         macos: "https://support.apple.com/en-us/HT204085",

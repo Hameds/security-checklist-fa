@@ -10,7 +10,7 @@ export default {
   apps: [
     {
       name: "NordVPN",
-      image: "./static/img/nordvpn.jpg",
+      image: "static/img/nordvpn.jpg",
       url: "https://nordvpn.com/",
       sources: {
         windows: "https://nordvpn.com/download/windows/",
@@ -22,7 +22,7 @@ export default {
     },
     {
       name: "ExpressVPN",
-      image: "./static/img/expressvpn.jpg",
+      image: "static/img/expressvpn.jpg",
       url: "https://www.expressvpn.com/",
 
       sources: {
@@ -36,7 +36,7 @@ export default {
     },
     {
       name: "ProtonVPN",
-      image: "./static/img/protonvpn.jpg",
+      image: "static/img/protonvpn.jpg",
       url: "https://www.protonvpn.com/",
       sources: {
         windows: "https://protonvpn.com/download/",
@@ -49,7 +49,7 @@ export default {
     },
     {
       name: "Mullvad VPN",
-      image: "./static/img/mullvand.png",
+      image: "static/img/mullvand.png",
       url: "https://mullvad.net/",
       sources: {
         windows: "https://mullvad.net/download/app/exe/latest/",
@@ -62,7 +62,7 @@ export default {
     },
     {
       name: "IVPN",
-      image: "./static/img/ivpn.jpg",
+      image: "static/img/ivpn.jpg",
       url: "https://www.ivpn.net/",
       sources: {
         windows: "https://www.ivpn.net/apps-windows",
@@ -74,7 +74,7 @@ export default {
     },
     {
       name: "Encrypt.me",
-      image: "./static/img/encrypt-me.jpg",
+      image: "static/img/encrypt-me.jpg",
       url: "https://encrypt.me/",
       sources: {
         windows: "https://app.encrypt.me/transition/download/windows/latest/",
@@ -86,7 +86,7 @@ export default {
     },
     {
       name: "Private Internet Access",
-      image: "./static/img/privateinternetaccess.jpg",
+      image: "static/img/privateinternetaccess.jpg",
       url: "https://www.privateinternetaccess.com/",
       sources: {
         windows:
@@ -102,7 +102,7 @@ export default {
     },
     {
       name: "Guardian Firewall",
-      image: "./static/img/guardian.png",
+      image: "static/img/guardian.png",
       url: "https://guardianapp.com",
       sources: {
         ios: "https://itunes.apple.com/us/app/guardian-firewall/id1363796315",
